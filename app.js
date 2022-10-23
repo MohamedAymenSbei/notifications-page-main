@@ -94,6 +94,7 @@ notifications.forEach((e,index)=>{
     const userImg = document.createElement('img');
     userImg.src=e.userImg;
     userImg.className='user-img';
+    userImg.alt = "img";
     notification.append(userImg);
 
     const content = document.createElement('div');
@@ -151,6 +152,7 @@ notifications.forEach((e,index)=>{
         const otherImg = document.createElement('img');
         otherImg.className = 'other-img';
         otherImg.src = e.img;
+        otherImg.alt = "img";
         react.appendChild(otherImg); 
     }
     if(e.isNew){
