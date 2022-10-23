@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Bold';
+    src: url('fonts/PlusJakartaSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url('fonts/PlusJakartaSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Ligth';
+    src: url('fonts/PlusJakartaSans-Light.ttf');
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+}
+
+body {
+    font-family: Ligth;
+    background-color: #f7fafd;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background: white;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1.2rem 1rem;
+    height: 90%;
+    
+    margin: 1rem 0;
+}
+.noti{
+    overflow-y: scroll;
+    height: 90%;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+.title{
+    font-family: Bold;
+    font-size: 1.4rem;
+}
+.mark{
+    font-size: 1.0rem;
+    font-family: Bold;
+    color: var(--Grayishblue);
+    cursor: pointer;
+}
+.mark:hover{
+    color: var(--Darkgrayishblue);
+}
+.mark:active{
+    color: var(--Blue);
+}
+.notification{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: .5rem;
+}
+.blues{
+    background:var(--verylightgrayishblue);
+}
+.user-img{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+}
+.up{
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user{
+    font-family: 'Bold';
+}
+.user::after{
+    content: '\00a0';
+}
+.action{
+    font-family: 'Ligth';
+    font-weight: 700;
+    color: var(--Grayishblue);
+}
+.action::after{
+    content: '\00a0';
+}
+.tile{
+    font-family: 'Bold';
+    color: var(--Darkgrayishblue);
+}
+.tile::after{
+    content: '\00a0';
+}
+.dot{
+    background: var(--Red);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+  
+}
+.ago{
+    margin-top: 0.3rem;
+    font-family: 'Ligth';
+    font-size: .8rem;
+    color: var(--Grayishblue);
+}
+.comment{
+    font-size: 0.9rem;
+    font-family: 'Ligth';
+    color: var(--Darkgrayishblue);
+    padding: 0.5rem;
+    border: .5px solid var(--Grayishblue);
+    border-radius: 5px;
+    margin-top: .7rem;
+}
+.react{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.other-img{
+    width: 4rem;
+}
+
+.title-count{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.count{
+    margin-left: 10px;
+    background: var(--Blue);
+    color: white;
+    padding:0.2rem 0.5rem;
+    border-radius: 5px;
+    font-family: Medium;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:750px) {
+    .card{
+        width: 70%;
+    }
+}
+@media screen and (max-width:550px) {
+    .card{
+        width: 85%;
+    }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
