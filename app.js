@@ -117,6 +117,9 @@ notifications.forEach((e,index)=>{
         const tile = document.createElement('span');
         tile.className = 'tile';
         tile.innerText = e.title;
+        if(e.type=="group"){
+            tile.style.color = "#0a317b"
+        }
         up.appendChild(tile);
     }
     
